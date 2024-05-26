@@ -10,7 +10,10 @@ const Header = () => {
     <li><NavLink to="/blogs">Blogs</NavLink></li>
     </>
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar" style={{
+      background:
+        "linear-gradient(.25turn, rgb(126, 144, 254,.05) 50%, rgb(152, 115, 255, .05) 100%)",
+    }}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,7 +47,10 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a className="btn btn-md"  style={{
+            background:
+              "linear-gradient(.25turn, rgb(126, 144, 254) 50%, rgb(152, 115, 255) 100%)",
+          }}>Star Applying</a>
       </div>
     </div>
   );
